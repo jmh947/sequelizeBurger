@@ -10,15 +10,12 @@ module.exports = function(sequelize, DataTypes) {
         },
 
         devourBurger: {
-            devoured: DataTypes.BOOLEAN
+            type: DataTypes.BOOLEAN
            
         }
     });
 
-    Burger.associate = function(models) {
-        models.Burger.belongsTo(models.models.js, { onDelete: 'cascade' });
-    };
-
 
     return Burger;
 }
+

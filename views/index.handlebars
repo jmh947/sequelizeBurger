@@ -1,9 +1,9 @@
-<h1>Are you Hungry?</h1>
+<h1>Add a Burger</h1>
 
 <ul>
   {{#each burger}}
-    {{#unless devour}}
-      {{> burgers/burger-block devour=true}}
+    {{#unless devourBurger}}
+      {{> burger-block}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -12,13 +12,13 @@
 
 <ul>
   {{#each burger}}
-    {{#if devour}}
-      {{> burgers/burger-block devour=false}}
+    {{#if devourBurger}}
+      {{> burger-block}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Burger</h2>
+<h2>Are you Hungry?</h2>
 <form class="create-form">
 
   <div class="form-group">
