@@ -8,7 +8,7 @@
 - CSS/Bootstrap
 ---
 ### App Image
-![]("burger.png")
+![]("../assets/img/burger.png")
 
 ### Deploy on Heroku
 https://sequelizeburger47.herokuapp.com/
