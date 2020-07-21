@@ -1,5 +1,17 @@
-# Burger the Sequel 
+# Sequelize Burger
+### Technologies Used
+- Node
+- Handlebars
+- MySQL
+- Express
+- HTML
+- CSS/Bootstrap
+---
+### App Image
+![]("burger.png")
 
-https://jmh947.github.io/sequelizeBurger/.
+### Deploy on Heroku
+https://sequelizeburger47.herokuapp.com/
+
 
 ---
