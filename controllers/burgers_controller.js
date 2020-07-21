@@ -5,7 +5,7 @@ var router = express.Router();
 var db = require("../models");
 
 router.get("/", function(req, res) {
-    db.Burger.findAll({raw:true}).then(function(data){
+    db.burger.findAll({}).then(function(data){
         var hbsObject = {
             burger: data
         };
@@ -16,7 +16,7 @@ router.get("/", function(req, res) {
 
 router.post("/api/burger", function (req, res) {
     console.log(req.body)
-    db.Burger.create({
+    db.burger.create({
         burgerName: req.body.burgerName,
         devourBurger: req.body.devourBurger
     }).then(function(result){
@@ -27,7 +27,7 @@ router.post("/api/burger", function (req, res) {
 });
 
 router.put("/api/burger/:id", function (req, res){
-    db.Burger.update({
+    db.burger.update({
         devourBurger: req.body.devourBurger
     },{
         where: {
@@ -43,7 +43,7 @@ router.put("/api/burger/:id", function (req, res){
 
      
    router.delete("/api/burger/:id", function (res, req){
-       db.Burger.destroy({
+       db.burger.destroy({
            where: {
                id: req.params.id
            }
